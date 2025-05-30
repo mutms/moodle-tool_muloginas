@@ -4,12 +4,10 @@ This plugin enhances the standard **"Log in as"** feature in Moodle™ LMS, impr
 
 Instead of switching users within the same session, it introduces an option to launch a **new Incognito window** for a separate **"Log in as"** session.
 
-## Key benefits:
+## Key benefits
 - **No repeated logins:** Administrators don’t need to log back in after ending the **"Log in as"** session.
 - **Parallel access:** The admin’s session remains active in the main browser window, while the **"Log in as"** session runs separately in Incognito mode.
 - **Improved security:** Incognito mode is designed for handling untrusted content, ensuring the **"Log in as"** session does not interfere with normal LMS use.
-
-This approach optimizes administration, reduces disruptions, and strengthens security when managing users in Moodle™ LMS.
 
 ## Known issues
 
