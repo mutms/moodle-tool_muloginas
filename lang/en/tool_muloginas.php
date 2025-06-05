@@ -35,6 +35,7 @@ $string['loggedoutprev'] = 'Previous "Log in as" session for user "{$a}" was ter
 $string['loginas'] = 'Log in as (via new Incognito window)';
 $string['loginas_a'] = 'Log in as "{$a}"';
 $string['logoutinfo'] = '"Log in as" session terminated, close this window to continue.';
+$string['muloginas:loginas'] = 'Log in as via Incognito window';
 $string['pluginname'] = 'Log in as via Incognito window';
 $string['popup_link'] = 'Right-click this link and select <strong>Open Link in Incognito Window</strong> or similar option.';
 $string['privacy:metadata'] = 'Log in as plugin does not store any personal user data persistently';
