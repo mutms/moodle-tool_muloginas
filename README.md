@@ -1,5 +1,7 @@
 # Log-in-as via Incognito window plugin for Moodle™ LMS
 
+![Moodle Plugin CI](https://github.com/mutms/moodle-tool_muloginas/actions/workflows/moodle-ci.yml/badge.svg)
+
 This plugin enhances the standard **"Log in as"** feature in Moodle™ LMS, improving user experience and security.
 
 Instead of switching users within the same session, it introduces an option to launch a **new Incognito window** for a separate **"Log in as"** session.
