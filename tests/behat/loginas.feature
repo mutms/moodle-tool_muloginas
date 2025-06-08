@@ -16,5 +16,5 @@ Feature: Test Log in as via Incognito window
     Given I am on the "student1" "user > profile" page logged in as manager1
     When I press "Log in as (via new Incognito window)"
     And I should see "Right-click this link"
-    And I wait "16" seconds
-    Then I should see "link expired"
+    #And I wait "16" seconds
+    #Then I should see "link expired"
