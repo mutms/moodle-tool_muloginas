@@ -114,4 +114,4 @@ if ($warning !== null) {
     \core\notification::add($warning, \core\output\notification::NOTIFY_ERROR);
 }
 
-redirect('/');
+redirect(new moodle_url('/'));
