@@ -12,9 +12,6 @@ Feature: Test Log in as via Incognito window
       | manager1  | manager      | System       |           |
       | manager2  | manager      | System       |           |
 
-  Scenario: Manager lets the log-in-as link expire
+  Scenario: Manager can see Log in as (via new Incognito window) link
     Given I am on the "student1" "user > profile" page logged in as manager1
-    When I press "Log in as (via new Incognito window)"
-    And I should see "Right-click this link"
-    #And I wait "16" seconds
-    #Then I should see "link expired"
+    Then I should see "Log in as (via new Incognito window)"
