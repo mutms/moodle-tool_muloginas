@@ -65,8 +65,10 @@ final class token_create extends \core_external\external_api {
     public static function execute(int $targetuserid): array {
         global $DB;
 
-        ['targetuserid' => $targetuserid] = self::validate_parameters(self::execute_parameters(),
-            ['targetuserid' => $targetuserid]);
+        ['targetuserid' => $targetuserid] = self::validate_parameters(
+            self::execute_parameters(),
+            ['targetuserid' => $targetuserid]
+        );
 
         $context = \context_system::instance();
         self::validate_context($context);

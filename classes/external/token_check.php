@@ -73,8 +73,10 @@ final class token_check extends \core_external\external_api {
     public static function execute(string $token): array {
         global $DB, $USER;
 
-        ['token' => $token] = self::validate_parameters(self::execute_parameters(),
-            ['token' => $token]);
+        ['token' => $token] = self::validate_parameters(
+            self::execute_parameters(),
+            ['token' => $token]
+        );
 
         $context = \context_system::instance();
         self::validate_context($context);
