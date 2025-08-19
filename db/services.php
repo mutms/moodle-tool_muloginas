@@ -29,14 +29,14 @@ defined('MOODLE_INTERNAL') || die();
 $functions = [
     'tool_muloginas_token_create' => [
         'classname' => tool_muloginas\external\token_create::class,
-        'description' => 'Create log-in-as token.',
+        'description' => 'Create log-in-as token from popup.js, it cannot be used as normal web services.',
         'type' => 'write',
         'ajax' => true,
         'loginrequired' => true,
     ],
     'tool_muloginas_token_check' => [
         'classname' => tool_muloginas\external\token_check::class,
-        'description' => 'Check log-in-as token status.',
+        'description' => 'Check log-in-as token status from popup.js, it cannot be used as normal web services.',
         'type' => 'read',
         'ajax' => true,
         'loginrequired' => true,

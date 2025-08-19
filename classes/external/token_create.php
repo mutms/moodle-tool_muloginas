@@ -63,7 +63,7 @@ final class token_create extends \core_external\external_api {
      * @return array
      */
     public static function execute(int $targetuserid): array {
-        global $DB;
+        global $DB, $SCRIPT;
 
         ['targetuserid' => $targetuserid] = self::validate_parameters(
             self::execute_parameters(),
@@ -73,6 +73,10 @@ final class token_create extends \core_external\external_api {
         $context = \context_system::instance();
         self::validate_context($context);
         require_capability('tool/muloginas:loginas', $context);
+
+        if (!PHPUNIT_TEST && $SCRIPT !== '/lib/ajax/service.php') {
+            throw new \core\exception\invalid_parameter_exception('Cannot be called from WS');
+        }
 
         $targetuser = $DB->get_record('user', ['id' => $targetuserid, 'deleted' => 0]);
 

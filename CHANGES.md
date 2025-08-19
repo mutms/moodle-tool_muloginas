@@ -1,5 +1,11 @@
 # Changelog
 
+## mu-4.5.6-02
+
+Release date: xx/08/2025
+
+* Access to loginas external functions is allowed only via ajax service.
+
 ## mu-4.5.6-01
 
 Release date: 09/08/2025
