@@ -71,7 +71,7 @@ final class token_check extends \core_external\external_api {
      * @return array
      */
     public static function execute(string $token): array {
-        global $DB, $USER;
+        global $DB, $USER, $SCRIPT;
 
         ['token' => $token] = self::validate_parameters(
             self::execute_parameters(),
@@ -81,6 +81,10 @@ final class token_check extends \core_external\external_api {
         $context = \context_system::instance();
         self::validate_context($context);
         require_capability('tool/muloginas:loginas', $context);
+
+        if (!PHPUNIT_TEST && $SCRIPT !== '/lib/ajax/service.php') {
+            throw new \core\exception\invalid_parameter_exception('Cannot be called from WS');
+        }
 
         $token = $DB->get_record('tool_muloginas_request', ['token' => $token]);
         if (!$token || $token->userid != $USER->id) {
