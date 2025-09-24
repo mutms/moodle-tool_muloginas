@@ -28,9 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 
 /** @var stdClass $plugin */
 $plugin->component = 'tool_muloginas';
-$plugin->version = 2025083145;
+$plugin->version = 2025092445;
 $plugin->requires = 2024100700;
 $plugin->maturity = MATURITY_ALPHA;
 $plugin->supported = [405, 405];
 $plugin->incompatible = 500;
-$plugin->release = 'mu-4.5.6-02+';
+$plugin->release = 'mu-4.5.6-03';
