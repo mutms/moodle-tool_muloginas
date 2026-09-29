@@ -35,6 +35,12 @@ No other plugins are required.
 
 See [online documentation](https://docs.mutms.org/muloginas/) for more information.
 
+## AI disclosure
+
+Parts of this plugin were written with the help of Claude (Anthropic). A human
+maintainer reviewed, corrected and accepted everything before it was committed.
+The design decisions and the final code are the maintainer's own.
+
 ---
 
 > MuTMS is an independent open-source project, not affiliated with Moodle HQ.
