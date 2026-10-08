@@ -32,4 +32,4 @@ $plugin->version = 2026092001;
 $plugin->requires = 2025041400;
 $plugin->supported = [500, 502];
 $plugin->incompatible = 503;
-$plugin->release = 'v5.0.11.01';
+$plugin->release = 'v5.0.11.01+';
