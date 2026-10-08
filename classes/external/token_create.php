@@ -40,7 +40,7 @@ final class token_create extends \core_external\external_api {
      */
     public static function execute_parameters(): external_function_parameters {
         return new external_function_parameters([
-            'targetuserid' => new external_value(PARAM_INT, 'user id to log in as', VALUE_REQUIRED),
+            'targetuserid' => new external_value(PARAM_INT, 'user id to log in as', VALUE_REQUIRED, null, NULL_NOT_ALLOWED),
         ]);
     }
 

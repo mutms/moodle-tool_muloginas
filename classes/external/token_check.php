@@ -49,7 +49,7 @@ final class token_check extends \core_external\external_api {
      */
     public static function execute_parameters(): external_function_parameters {
         return new external_function_parameters([
-            'token' => new external_value(PARAM_RAW, 'token to check', VALUE_REQUIRED),
+            'token' => new external_value(PARAM_RAW, 'token to check', VALUE_REQUIRED, null, NULL_NOT_ALLOWED),
         ]);
     }
 
