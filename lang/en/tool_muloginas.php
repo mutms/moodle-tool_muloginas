@@ -25,7 +25,7 @@
  */
 
 $string['creatingtoken'] = 'Preparing log in as token...';
-$string['error_incognitoproglem'] = 'Error initialising "Log in as" session, make sure all Incognito windows are closed and retry.';
+$string['error_incognitoproblem'] = 'Error initialising "Log in as" session, make sure all Incognito windows are closed and retry.';
 $string['error_invalidrequest'] = 'Invalid "Log in as" request detected.';
 $string['error_linkexpired'] = '"Log in as" link expired, retry if necessary.';
 $string['error_notincognito'] = '"Log in as" link was not opened in a new Incognito window.';
