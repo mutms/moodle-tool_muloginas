@@ -21,17 +21,18 @@
 namespace tool_muloginas\phpunit\external;
 
 use tool_muloginas\external\token_create;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\Group;
 
 /**
  * Log-in-as token creation web service tests.
  *
- * @group       MuTMS
  * @package     tool_muloginas
  * @copyright   2025 Petr Skoda
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- *
- * @covers \tool_muloginas\external\token_create
  */
+#[CoversClass(\tool_muloginas\external\token_create::class)]
+#[Group('MuTMS')]
 final class token_create_test extends \advanced_testcase {
     protected function setUp(): void {
         parent::setUp();

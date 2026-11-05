@@ -22,17 +22,18 @@ namespace tool_muloginas\phpunit\task;
 
 use tool_muloginas\local\loginas;
 use tool_muloginas\task\cron;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\Group;
 
 /**
  * Log-in-as cron tests.
  *
- * @group       MuTMS
  * @package     tool_muloginas
  * @copyright   2025 Petr Skoda
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- *
- * @covers \tool_muloginas\task\cron
  */
+#[CoversClass(\tool_muloginas\task\cron::class)]
+#[Group('MuTMS')]
 final class cron_test extends \advanced_testcase {
     protected function setUp(): void {
         parent::setUp();

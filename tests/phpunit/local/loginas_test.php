@@ -21,17 +21,18 @@
 namespace tool_muloginas\phpunit\local;
 
 use tool_muloginas\local\loginas;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\Group;
 
 /**
  * Log-in-as helper tests.
  *
- * @group       MuTMS
  * @package     tool_muloginas
  * @copyright   2025 Petr Skoda
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- *
- * @covers \tool_muloginas\local\loginas
  */
+#[CoversClass(\tool_muloginas\local\loginas::class)]
+#[Group('MuTMS')]
 final class loginas_test extends \advanced_testcase {
     protected function setUp(): void {
         parent::setUp();
