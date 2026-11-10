@@ -5,3 +5,7 @@ Plugin versioning is derived from Moodle releases, it does not comply with the s
 The format of this change log follows the advice given at [Keep a CHANGELOG](https://keepachangelog.com).
 
 ## [Unreleased]
+
+### Added
+
+- Czech translation and AI-produced previews of German, French, Italian, Portuguese and Spanish translations
